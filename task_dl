@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Usage : ./task_dl <day nbr>
+# Exemple for day 1 : ./task_dl 1
+
+
+if [ ! -d "./day$1/" ]; then
+    mkdir ./day$1
+fi
+
+curl -s --cookie session_cookie "https://adventofcode.com/2023/day/$1/input" -o ./day$1/input
