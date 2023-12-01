@@ -1,25 +1,59 @@
 # -*- coding: utf-8 -*-
 
 def parse_line(line):
-    for i, number in enumerate(["one", "two", "three", "four", "five", "six", "seven", "eigth", "nine"]):
-        is_in = line.find(number)
-        if is_in != -1:
-            print(line, number, len(line) - len(number) + 1)
-            new_line = ""
-            modified = 0
-            for j in range(len(line) - len(number) + 1):
-                if j == is_in: 
-                    new_line[j] = str(i+1)
-                    modified = 1
-                else:
-                    if not modified:
-                        new_line[j] = line[j]
-                    else:
-                        new_line[j] = line[j + len(number)]
-            print(new_line)
-                
-        
-        i += 1
+    i = 0
+    finished = 0
+    while not finished:
+        if line[i:i+2] == '':
+            finished = 1
+        else:
+            match line[i:i+2]:
+                case "on":
+                    line = modif(line, "one", "1")
+                    i += 1
+                case "tw":
+                    line = modif(line, "two", "2")
+                    i += 1
+                case "th":
+                    line = modif(line, "three", "3")
+                    i += 1
+                case "fo":
+                    line = modif(line, "four", "4")
+                    i += 1
+                case "fi":
+                    line = modif(line, "five", "5")
+                    i += 1
+                case "si":
+                    line = modif(line, "six", "6")
+                    i += 1
+                case "se":
+                    line = modif(line, "seven", "7")
+                    i += 1
+                case "ei":
+                    line = modif(line, "eight", "8")
+                    i += 1
+                case "ni":
+                    line = modif(line, "nine", "9")
+                    i += 1
+                case _:
+                    i += 1
+    return line
+
+def modif(line, value, dec):
+    is_in = line.find(value)
+    new_line = []
+    modified = 0
+    for j in range(len(line) - len(value) + 1):
+        if j == is_in: 
+            new_line.append(dec)
+            modified = 1
+        else:
+            if not modified:
+                new_line.append(line[j])
+            else:
+                new_line.append(line[j + len(value) - 1])
+    line = "".join(new_line)
+    return line
 
 
 if __name__ == "__main__":
@@ -27,11 +61,8 @@ if __name__ == "__main__":
     res = 0
     lines  = open("./input", 'r').readlines()
 
-    lines = ["two1nine", "eightwothree"]
-
     for line in lines:
         line = parse_line(line)
-        print(line)
         digits = [0, 0]
 
         i = 0
