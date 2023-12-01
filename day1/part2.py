@@ -10,33 +10,23 @@ def parse_line(line):
             match line[i:i+2]:
                 case "on":
                     line = modif(line, "one", "1")
-                    i += 1
                 case "tw":
                     line = modif(line, "two", "2")
-                    i += 1
                 case "th":
                     line = modif(line, "three", "3")
-                    i += 1
                 case "fo":
                     line = modif(line, "four", "4")
-                    i += 1
                 case "fi":
                     line = modif(line, "five", "5")
-                    i += 1
                 case "si":
                     line = modif(line, "six", "6")
-                    i += 1
                 case "se":
                     line = modif(line, "seven", "7")
-                    i += 1
                 case "ei":
                     line = modif(line, "eight", "8")
-                    i += 1
                 case "ni":
                     line = modif(line, "nine", "9")
-                    i += 1
-                case _:
-                    i += 1
+            i += 1
     return line
 
 def modif(line, value, dec):
