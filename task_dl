@@ -8,4 +8,6 @@ if [ ! -d "./day$1/" ]; then
     mkdir ./day$1
 fi
 
-curl -s --cookie session_cookie "https://adventofcode.com/2023/day/$1/input" -o ./day$1/input
+session=`cat ./session_cookie`;
+
+curl -s -b "session=$session" "https://adventofcode.com/2023/day/$1/input" -o ./day$1/input
