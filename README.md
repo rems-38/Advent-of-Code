@@ -28,3 +28,4 @@ The script automaticly create the folder for the day you specified and download 
 |   3 | 07:17:38 |  34396 |        0 | 08:57:53 |  32424 |        0 |
 |   4 | 01:03:31 |  14690 |        0 | 01:16:06 |  10937 |        0 |
 |   5 | 01:23:51 |  10356 |        0 |     None |   None |        0 |
+|  6  | 00:56:20 |  12304 |        0 | 01:20:41 |  13133 |        0 |
