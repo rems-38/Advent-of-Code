@@ -4,6 +4,8 @@
 
 ## 2023 Edition
 
+![](https://img.shields.io/badge/Stars%202023%20⭐-12-yellow) ![](https://img.shields.io/badge/2023%20day%20📅-7-blue)
+
 ### Task downloader
 
 You can download your personal puzzle input by following this step :
@@ -27,5 +29,6 @@ The script automaticly create the folder for the day you specified and download 
 |   2 | 08:07:31 |  49953 |        0 | 08:18:32 |  46925 |        0 |
 |   3 | 07:17:38 |  34396 |        0 | 08:57:53 |  32424 |        0 |
 |   4 | 01:03:31 |  14690 |        0 | 01:16:06 |  10937 |        0 |
-|   5 | 01:23:51 |  10356 |        0 |     None |   None |        0 |
-|  6  | 00:56:20 |  12304 |        0 | 01:20:41 |  13133 |        0 |
+|   5 | 01:23:51 |  10356 |        0 |        - |      - |        - |
+|   6 | 00:56:20 |  12304 |        0 | 01:20:41 |  13133 |        0 |
+|   7 | 05:04:32 |  22887 |        0 |        - |      - |        - |
