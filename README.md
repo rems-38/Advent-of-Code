@@ -4,7 +4,7 @@
 
 ## 2023 Edition
 
-![](https://img.shields.io/badge/Stars%202023%20⭐-12-yellow) ![](https://img.shields.io/badge/2023%20day%20📅-7-blue)
+![](https://img.shields.io/badge/Stars%202023%20⭐-12-yellow) ![](https://img.shields.io/badge/2023%20day%20📅-7-blue) ![](https://img.shields.io/badge/Parts%20not%20done%20❌-2-red)
 
 ### Task downloader
 
