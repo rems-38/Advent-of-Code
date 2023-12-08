@@ -4,7 +4,7 @@
 
 ## 2023 Edition
 
-![](https://img.shields.io/badge/Stars%202023%20⭐-12-yellow) ![](https://img.shields.io/badge/2023%20day%20📅-7-blue) ![](https://img.shields.io/badge/Parts%20not%20done%20❌-2-red)
+![](https://img.shields.io/badge/Stars%202023%20⭐-13-yellow) ![](https://img.shields.io/badge/2023%20day%20📅-8-blue) ![](https://img.shields.io/badge/Parts%20not%20done%20❌-2-red)
 
 ### Task downloader
 
@@ -32,3 +32,4 @@ The script automaticly create the folder for the day you specified and download 
 |   5 | 01:23:51 |  10356 |        0 |        - |      - |        - |
 |   6 | 00:56:20 |  12304 |        0 | 01:20:41 |  13133 |        0 |
 |   7 | 05:04:32 |  22887 |        0 |        - |      - |        - |
+|   8 | 00:54:07 |  10895 |        0 |        - |      - |        - |

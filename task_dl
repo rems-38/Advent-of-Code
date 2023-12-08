@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Usage : ./task_dl <day nbr>
+# Usage : ./task_dl <day nbr> [<langage>]
 # Exemple for day 1 : ./task_dl 1
+# Exemple for day 1 in python : ./task_dl 1 py
 
 
 if [ ! -d "./day$1/" ]; then
@@ -11,3 +12,8 @@ fi
 session=`cat ./session_cookie`;
 
 curl -s -b "session=$session" "https://adventofcode.com/2023/day/$1/input" -o ./day$1/input
+
+if [ $2 ]; then
+    touch ./day$1/part1.$2
+    touch ./day$1/part2.$2
+fi
